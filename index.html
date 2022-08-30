@@ -196,7 +196,8 @@ h1:hover{
    function main(){
     document.querySelector('span').innerHTML='Getting Data....'
     var lonm=document.querySelector('input').value;
-    fetch('http://api.weatherapi.com/v1/current.json?key=27ee0bcb0c17471bbac105433222408&q='+lonm+'&aqi=no').then((res) => {
+       var tot='http://api.weatherapi.com/v1/current.json?key=27ee0bcb0c17471bbac105433222408&q='+lonm+'&aqi=no';
+    fetch(tot).then((res) => {
         return res.json();
     }).then((data) => {
    
