@@ -209,7 +209,7 @@ h1:hover{
  document.getElementById('cn').innerHTML="<span class='lk'>Country Name: </span>"+data.location.country;
  var reg=data.location.region;
  if(reg==''){
-    reg=document.querySelector('input').value.toUpperCase();
+    reg=data.location.country;
 }
  document.getElementById('cin').innerHTML="<span class='lk'>Region: </span>"+reg;
  document.getElementById('cc').innerHTML="<span class='lk'>Tempteture: </span>"+data.current.temp_c+"<sup>0</sup>c";
